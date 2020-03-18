@@ -30,6 +30,7 @@ public class ServerWorker extends Thread{
         BufferedReader reader = new BufferedReader( new InputStreamReader(inputStream));
         String line;
         while((line = reader.readLine()) != null){
+            String[] tokens = StringUtils.split();
             if ("quit".equalsIgnoreCase(line)){
                 break;
             }
